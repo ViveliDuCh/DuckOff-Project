@@ -1,0 +1,7 @@
+vhdl work "VGA_DISPLAY.vhd"
+vhdl work "VGA.vhd"
+vhdl work "score.vhd"
+vhdl work "freqDividerY.vhd"
+vhdl work "freqDividerF.vhd"
+vhdl work "freqDivider60.vhd"
+vhdl work "Top.vhd"

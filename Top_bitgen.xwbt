@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\Top.ncd
+OUTFILE=C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\Top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame
+LICENSE=WebPack
+USER_INFO=176089449_1777494614_0_810

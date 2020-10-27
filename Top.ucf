@@ -1,0 +1,36 @@
+#PACE: Start of PACE I/O Pin Assignments
+#Pins para la tableta Nexys 3
+NET "Rst" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "Rst"         LOC = "B8";
+
+#Forzar a que un Clock se pueda conectar a una señal que no es Clock
+#NET "KeyClock" CLOCK_DEDICATED_ROUTE;
+NET "Clk"           LOC = "V10";
+NET "Red<2>"        LOC = "N7";  #Rojo  MSB 
+NET "Red<1>"        LOC = "V7";  #Rojo  middle bit
+NET "Red<0>"        LOC = "U7";  #Rojo  LSB
+NET "Green<2>"      LOC = "V6";  #Green MSB
+NET "Green<1>"      LOC = "T6";  #Green middle bit
+NET "Green<0>"      LOC = "P8";  #Green LSB
+NET "Blue<1>"       LOC = "T7";  #Blue  MSB
+NET "Blue<0>"       LOC = "R7";  #Blue  LSB
+NET "Hsync"         LOC = "N6";
+NET "Vsync"         LOC = "P7";
+
+#buttons
+NET "rightButton"   LOC = "D9";
+NET "leftButton"    LOC = "C4";
+
+NET "anode[3]"  LOC = P17;
+NET "anode[2]"  LOC = P18;
+NET "anode[1]"  LOC = N15;
+NET "anode[0]"  LOC = N16;
+NET "segment[0]"    LOC = T17;
+NET "segment[1]"    LOC = T18;
+NET "segment[2]"    LOC = U17;
+NET "segment[3]"    LOC = U18;
+NET "segment[4]"    LOC = M14;
+NET "segment[5]"    LOC = N14;
+NET "segment[6]"    LOC = L14;
+NET "segment[7]"    LOC = M13;
+

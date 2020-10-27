@@ -1,0 +1,605 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" into library work
+Parsing entity <VGA_DISPLAY>.
+Parsing architecture <Behavioral> of entity <vga_display>.
+Parsing VHDL file "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA.vhd" into library work
+Parsing entity <VGA>.
+Parsing architecture <Behavioral> of entity <vga>.
+Parsing VHDL file "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\score.vhd" into library work
+Parsing entity <score>.
+Parsing architecture <Behavioral> of entity <score>.
+Parsing VHDL file "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\freqDividerY.vhd" into library work
+Parsing entity <freqDividerY>.
+Parsing architecture <Behavioral> of entity <freqdividery>.
+Parsing VHDL file "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\freqDividerF.vhd" into library work
+Parsing entity <freqDividerF>.
+Parsing architecture <Behavioral> of entity <freqdividerf>.
+Parsing VHDL file "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\freqDivider60.vhd" into library work
+Parsing entity <freqDivider60>.
+Parsing architecture <Behavioral> of entity <freqdivider60>.
+Parsing VHDL file "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\Top.vhd" into library work
+Parsing entity <Top>.
+Parsing architecture <Behavioral> of entity <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Top> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <VGA> (architecture <Behavioral>) with generics from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA.vhd" Line 164. Case statement is complete. others clause is never selected
+
+Elaborating entity <VGA_DISPLAY> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7300: Using initial value "0010000000" for offsetxgo since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7301: Using initial value "0010110000" for offsetygo since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7303: Using initial value "0010000000" for offsetxbs since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7304: Using initial value "0010110000" for offsetybs since it is never assigned
+WARNING:HDLCompiler:92 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7469: startflag should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7472: addressbs should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7477: hearties should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7479: addressgo should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7484: hearties should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7485: addresskok should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7487: addresskok should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7503: addressobj2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7505: addressobj2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7524: clk should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd" Line 7544: clk should be on the sensitivity list of the process
+
+Elaborating entity <freqDivider60> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <freqDividerF> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <freqDividerY> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <score> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\score.vhd" Line 137. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top>.
+    Related source file is "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\Top.vhd".
+    Summary:
+	no macro.
+Unit <Top> synthesized.
+
+Synthesizing Unit <VGA>.
+    Related source file is "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA.vhd".
+        MX_HS = 800
+        MX_VS = 521
+    Found 1-bit register for signal <En_25>.
+    Found 2-bit register for signal <pr_state>.
+    Found 2-bit register for signal <FreqDiv.Count>.
+    Found 10-bit register for signal <CuentaH>.
+    Found 10-bit register for signal <CuentaV>.
+    Found finite state machine <FSM_0> for signal <pr_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 8                                              |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | Rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | al_hs                                          |
+    | Power Up State     | al_hs                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit adder for signal <FreqDiv.Count[1]_GND_7_o_add_4_OUT> created at line 92.
+    Found 10-bit adder for signal <CuentaH[9]_GND_7_o_add_8_OUT> created at line 113.
+    Found 10-bit adder for signal <CuentaV[9]_GND_7_o_add_14_OUT> created at line 125.
+    Found 10-bit subtractor for signal <X> created at line 35.
+    Found 10-bit subtractor for signal <Y> created at line 36.
+    Found 10-bit comparator lessequal for signal <n0003> created at line 79
+    Found 10-bit comparator equal for signal <Tiempo[9]_CuentaH[9]_equal_8_o> created at line 109
+    Found 10-bit comparator lessequal for signal <n0030> created at line 169
+    Found 10-bit comparator lessequal for signal <n0032> created at line 169
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   1 Finite State Machine(s).
+Unit <VGA> synthesized.
+
+Synthesizing Unit <VGA_DISPLAY>.
+    Related source file is "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\VGA_DISPLAY.vhd".
+        n = 14
+        m = 8
+    Found 6-bit register for signal <extraOffsetXC>.
+    Found 10-bit register for signal <xButton>.
+    Found 10-bit register for signal <offsetXP>.
+    Found 9-bit register for signal <yButton>.
+    Found 9-bit register for signal <yButton2>.
+    Found 9-bit register for signal <offsetYF>.
+    Found 9-bit register for signal <offsetYA>.
+    Found 10-bit register for signal <offsetXF>.
+    Found 10-bit register for signal <offsetXA>.
+    Found 6-bit register for signal <hearties>.
+    Found 1-bit register for signal <flagScore>.
+    Found 1-bit register for signal <FlagOut>.
+    Found 1-bit register for signal <FlagHeart>.
+    Found 1-bit register for signal <FlagOutH>.
+    Found 1-bit register for signal <flag>.
+    Found 1-bit register for signal <flagA>.
+    Found 11-bit subtractor for signal <GND_8_o_GND_8_o_sub_110_OUT> created at line 7507.
+    Found 11-bit subtractor for signal <GND_8_o_GND_8_o_sub_112_OUT> created at line 7507.
+    Found 17-bit adder for signal <SuperAddressP> created at line 7333.
+    Found 14-bit adder for signal <SuperAddressC> created at line 7336.
+    Found 16-bit adder for signal <SuperAddressF> created at line 7339.
+    Found 16-bit adder for signal <SuperAddressA> created at line 7342.
+    Found 17-bit adder for signal <SuperAddressGO> created at line 7345.
+    Found 10-bit adder for signal <xButton[9]_GND_8_o_add_42_OUT> created at line 7409.
+    Found 9-bit adder for signal <yButton[8]_GND_8_o_add_50_OUT> created at line 7427.
+    Found 9-bit adder for signal <yButton2[8]_GND_8_o_add_62_OUT> created at line 7452.
+    Found 10-bit adder for signal <offsetXC[9]_GND_8_o_add_83_OUT> created at line 7484.
+    Found 10-bit adder for signal <offsetXF[9]_GND_8_o_add_92_OUT> created at line 7493.
+    Found 10-bit adder for signal <GND_8_o_offsetYF[9]_add_95_OUT> created at line 7493.
+    Found 10-bit adder for signal <offsetXA[9]_GND_8_o_add_101_OUT> created at line 7502.
+    Found 10-bit adder for signal <GND_8_o_offsetYA[9]_add_104_OUT> created at line 7502.
+    Found 10-bit adder for signal <offsetYF[9]_GND_8_o_add_122_OUT> created at line 7526.
+    Found 10-bit adder for signal <offsetXF[9]_GND_8_o_add_124_OUT> created at line 7526.
+    Found 10-bit adder for signal <offsetYA[9]_GND_8_o_add_134_OUT> created at line 7546.
+    Found 10-bit adder for signal <offsetXA[9]_GND_8_o_add_136_OUT> created at line 7546.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_1_OUT<9:0>> created at line 7333.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_2_OUT<9:0>> created at line 7333.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_5_OUT<9:0>> created at line 7336.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_6_OUT<9:0>> created at line 7336.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_7_OUT<9:0>> created at line 7336.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_10_OUT<9:0>> created at line 7339.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_11_OUT<9:0>> created at line 7339.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_14_OUT<9:0>> created at line 7342.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_15_OUT<9:0>> created at line 7342.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_18_OUT<9:0>> created at line 7345.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_19_OUT<9:0>> created at line 7345.
+    Found 6-bit subtractor for signal <GND_8_o_GND_8_o_sub_27_OUT<5:0>> created at line 7371.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_41_OUT<9:0>> created at line 7406.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_62_OUT<9:0>> created at line 7448.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_127_OUT<9:0>> created at line 7526.
+    Found 4096x8-bit Read Only RAM for signal <AddressObj[11]_GND_8_o_wide_mux_99_OUT>
+    Found 4096x8-bit Read Only RAM for signal <AddressObj2[11]_GND_8_o_wide_mux_108_OUT>
+    Found 16384x8-bit Read Only RAM for signal <AddressChar[13]_GND_8_o_wide_mux_114_OUT>
+    Found 10-bit comparator lessequal for signal <n0048> created at line 7381
+    Found 10-bit comparator lessequal for signal <n0050> created at line 7383
+    Found 10-bit comparator greater for signal <GND_8_o_xButton[9]_LessThan_40_o> created at line 7404
+    Found 10-bit comparator greater for signal <xButton[9]_PWR_9_o_LessThan_42_o> created at line 7407
+    Found 10-bit comparator lessequal for signal <n0099> created at line 7478
+    Found 10-bit comparator greater for signal <Xin[9]_GND_8_o_LessThan_78_o> created at line 7478
+    Found 10-bit comparator lessequal for signal <n0102> created at line 7478
+    Found 10-bit comparator greater for signal <Yin[9]_GND_8_o_LessThan_80_o> created at line 7478
+    Found 10-bit comparator lessequal for signal <n0110> created at line 7484
+    Found 10-bit comparator greater for signal <Xin[9]_offsetXC[9]_LessThan_85_o> created at line 7484
+    Found 10-bit comparator lessequal for signal <n0114> created at line 7484
+    Found 10-bit comparator greater for signal <Yin[9]_offsetYC[9]_LessThan_88_o> created at line 7484
+    Found 10-bit comparator lessequal for signal <n0125> created at line 7493
+    Found 10-bit comparator greater for signal <Xin[9]_offsetXF[9]_LessThan_94_o> created at line 7493
+    Found 10-bit comparator lessequal for signal <n0129> created at line 7493
+    Found 10-bit comparator greater for signal <Yin[9]_GND_8_o_LessThan_97_o> created at line 7493
+    Found 10-bit comparator lessequal for signal <n0142> created at line 7502
+    Found 10-bit comparator greater for signal <Xin[9]_offsetXA[9]_LessThan_103_o> created at line 7502
+    Found 10-bit comparator lessequal for signal <n0146> created at line 7502
+    Found 10-bit comparator greater for signal <Yin[9]_GND_8_o_LessThan_106_o> created at line 7502
+    Found 11-bit comparator lessequal for signal <n0160> created at line 7507
+    Found 11-bit comparator greater for signal <GND_8_o_GND_8_o_LessThan_113_o> created at line 7507
+    Found 10-bit comparator greater for signal <GND_8_o_Yin[9]_LessThan_114_o> created at line 7507
+    Found 10-bit comparator greater for signal <offsetYP[9]_offsetYF[9]_LessThan_124_o> created at line 7526
+    Found 10-bit comparator greater for signal <offsetXF[9]_offsetXP[9]_LessThan_126_o> created at line 7526
+    Found 10-bit comparator greater for signal <GND_8_o_offsetXF[9]_LessThan_129_o> created at line 7526
+    Found 10-bit comparator greater for signal <offsetYF[9]_GND_8_o_LessThan_131_o> created at line 7527
+    Found 10-bit comparator greater for signal <offsetYP[9]_offsetYF[9]_LessThan_133_o> created at line 7530
+    Found 10-bit comparator greater for signal <offsetYF[9]_GND_8_o_LessThan_134_o> created at line 7530
+    Found 10-bit comparator greater for signal <offsetYP[9]_offsetYA[9]_LessThan_136_o> created at line 7546
+    Found 10-bit comparator greater for signal <offsetXA[9]_offsetXP[9]_LessThan_138_o> created at line 7546
+    Found 10-bit comparator greater for signal <GND_8_o_offsetXA[9]_LessThan_141_o> created at line 7546
+    Found 10-bit comparator greater for signal <offsetYA[9]_GND_8_o_LessThan_143_o> created at line 7547
+    Found 10-bit comparator greater for signal <offsetYP[9]_offsetYA[9]_LessThan_145_o> created at line 7550
+    Found 10-bit comparator greater for signal <offsetYA[9]_GND_8_o_LessThan_146_o> created at line 7550
+    WARNING:Xst:2404 -  FFs/Latches <offsetYF<9:8>> (without init value) have a constant value of 0 in block <VGA_DISPLAY>.
+    WARNING:Xst:2404 -  FFs/Latches <offsetYA<9:8>> (without init value) have a constant value of 0 in block <VGA_DISPLAY>.
+    Summary:
+	inferred   3 RAM(s).
+	inferred  33 Adder/Subtractor(s).
+	inferred  94 D-type flip-flop(s).
+	inferred  35 Comparator(s).
+	inferred  14 Multiplexer(s).
+Unit <VGA_DISPLAY> synthesized.
+
+Synthesizing Unit <freqDivider60>.
+    Related source file is "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\freqDivider60.vhd".
+    Found 20-bit register for signal <Count100M>.
+    Found 1-bit register for signal <enable60>.
+    Found 20-bit adder for signal <Count100M[19]_GND_40_o_add_1_OUT> created at line 57.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <freqDivider60> synthesized.
+
+Synthesizing Unit <freqDividerF>.
+    Related source file is "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\freqDividerF.vhd".
+    Found 19-bit register for signal <Count100M>.
+    Found 1-bit register for signal <enable2>.
+    Found 19-bit adder for signal <Count100M[18]_GND_41_o_add_1_OUT> created at line 57.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <freqDividerF> synthesized.
+
+Synthesizing Unit <freqDividerY>.
+    Related source file is "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\freqDividerY.vhd".
+    Found 19-bit register for signal <Count100M>.
+    Found 1-bit register for signal <enable3>.
+    Found 19-bit adder for signal <Count100M[18]_GND_42_o_add_1_OUT> created at line 57.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <freqDividerY> synthesized.
+
+Synthesizing Unit <score>.
+    Related source file is "C:\Users\Vivi\Downloads\LAST VERSION\Final_Project_Videogame\score.vhd".
+    Found 4-bit register for signal <UniCount>.
+    Found 4-bit register for signal <DecCount>.
+    Found 19-bit register for signal <Count100M>.
+    Found 19-bit adder for signal <Count100M[18]_GND_43_o_add_1_OUT> created at line 61.
+    Found 4-bit adder for signal <UniCount[3]_GND_43_o_add_6_OUT> created at line 79.
+    Found 4-bit adder for signal <DecCount[3]_GND_43_o_add_12_OUT> created at line 102.
+    Found 16x8-bit Read Only RAM for signal <Seg_out>
+    Found 19-bit comparator greater for signal <GND_43_o_ClkOut_equal_18_o> created at line 66
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   7 Multiplexer(s).
+Unit <score> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16384x8-bit single-port Read Only RAM                 : 1
+ 16x8-bit single-port Read Only RAM                    : 1
+ 4096x8-bit single-port Read Only RAM                  : 2
+# Adders/Subtractors                                   : 44
+ 10-bit adder                                          : 11
+ 10-bit addsub                                         : 1
+ 10-bit subtractor                                     : 15
+ 11-bit subtractor                                     : 2
+ 14-bit adder                                          : 1
+ 16-bit adder                                          : 2
+ 17-bit adder                                          : 2
+ 19-bit adder                                          : 3
+ 2-bit adder                                           : 1
+ 20-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 6-bit subtractor                                      : 1
+ 9-bit adder                                           : 2
+# Registers                                            : 29
+ 1-bit register                                        : 10
+ 10-bit register                                       : 6
+ 19-bit register                                       : 3
+ 2-bit register                                        : 1
+ 20-bit register                                       : 1
+ 4-bit register                                        : 2
+ 6-bit register                                        : 2
+ 9-bit register                                        : 4
+# Comparators                                          : 40
+ 10-bit comparator equal                               : 1
+ 10-bit comparator greater                             : 23
+ 10-bit comparator lessequal                           : 13
+ 11-bit comparator greater                             : 1
+ 11-bit comparator lessequal                           : 1
+ 19-bit comparator greater                             : 1
+# Multiplexers                                         : 24
+ 1-bit 2-to-1 multiplexer                              : 6
+ 19-bit 2-to-1 multiplexer                             : 3
+ 20-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 9
+ 9-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Top>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <C02/Mram_AddressObj2[11]_GND_8_o_wide_mux_108_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <C02/SuperAddressA> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <C02/Mram_AddressObj[11]_GND_8_o_wide_mux_99_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <C02/SuperAddressF> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <C02/Mram_AddressChar[13]_GND_8_o_wide_mux_114_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16384-word x 8-bit                  |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <C02/SuperAddressP> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <VGA>.
+The following registers are absorbed into counter <FreqDiv.Count>: 1 register on signal <FreqDiv.Count>.
+The following registers are absorbed into counter <CuentaH>: 1 register on signal <CuentaH>.
+The following registers are absorbed into counter <CuentaV>: 1 register on signal <CuentaV>.
+Unit <VGA> synthesized (advanced).
+
+Synthesizing (advanced) Unit <VGA_DISPLAY>.
+The following registers are absorbed into counter <xButton>: 1 register on signal <xButton>.
+The following registers are absorbed into accumulator <offsetXF>: 1 register on signal <offsetXF>.
+The following registers are absorbed into accumulator <hearties>: 1 register on signal <hearties>.
+The following registers are absorbed into counter <yButton>: 1 register on signal <yButton>.
+The following registers are absorbed into counter <yButton2>: 1 register on signal <yButton2>.
+Unit <VGA_DISPLAY> synthesized (advanced).
+
+Synthesizing (advanced) Unit <freqDivider60>.
+The following registers are absorbed into counter <Count100M>: 1 register on signal <Count100M>.
+Unit <freqDivider60> synthesized (advanced).
+
+Synthesizing (advanced) Unit <freqDividerF>.
+The following registers are absorbed into counter <Count100M>: 1 register on signal <Count100M>.
+Unit <freqDividerF> synthesized (advanced).
+
+Synthesizing (advanced) Unit <freqDividerY>.
+The following registers are absorbed into counter <Count100M>: 1 register on signal <Count100M>.
+Unit <freqDividerY> synthesized (advanced).
+
+Synthesizing (advanced) Unit <score>.
+The following registers are absorbed into counter <UniCount>: 1 register on signal <UniCount>.
+The following registers are absorbed into counter <DecCount>: 1 register on signal <DecCount>.
+The following registers are absorbed into counter <Count100M>: 1 register on signal <Count100M>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Seg_out> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Valor>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Seg_out>       |          |
+    -----------------------------------------------------------------------
+Unit <score> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16384x8-bit single-port distributed Read Only RAM     : 1
+ 16x8-bit single-port distributed Read Only RAM        : 1
+ 4096x8-bit single-port distributed Read Only RAM      : 2
+# Adders/Subtractors                                   : 32
+ 10-bit adder                                          : 9
+ 10-bit subtractor                                     : 9
+ 11-bit subtractor                                     : 2
+ 12-bit adder                                          : 2
+ 14-bit adder                                          : 2
+ 2-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+ 6-bit subtractor                                      : 2
+ 7-bit subtractor                                      : 2
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 12
+ 10-bit up counter                                     : 2
+ 10-bit updown counter                                 : 1
+ 19-bit up counter                                     : 3
+ 2-bit up counter                                      : 1
+ 20-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+ 9-bit up counter                                      : 2
+# Accumulators                                         : 2
+ 10-bit up accumulator                                 : 1
+ 6-bit down accumulator                                : 1
+# Registers                                            : 54
+ Flip-Flops                                            : 54
+# Comparators                                          : 40
+ 10-bit comparator equal                               : 1
+ 10-bit comparator greater                             : 23
+ 10-bit comparator lessequal                           : 13
+ 11-bit comparator greater                             : 1
+ 11-bit comparator lessequal                           : 1
+ 19-bit comparator greater                             : 1
+# Multiplexers                                         : 16
+ 1-bit 2-to-1 multiplexer                              : 6
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 9
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <pr_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ al_hs | 00
+ fp_hs | 01
+ pu_hs | 10
+ bp_hs | 11
+-------------------
+WARNING:Xst:1710 - FF/Latch <C02/extraOffsetXC_0> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <C02/extraOffsetXC_1> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <C02/extraOffsetXC_2> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <C02/extraOffsetXC_3> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C02/hearties_2> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C02/hearties_1> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C02/hearties_3> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <C02/offsetXF_2> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <C02/offsetXF_1> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <C02/offsetXF_3> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <C02/offsetXF_4> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <C02/offsetXF_5> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <C02/hearties_0> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <C02/offsetXF_0> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set or reset and opposite initialization value:
+    C02/xButton_8 in unit <Top>
+    C02/hearties_5 in unit <Top>
+    C02/hearties_4 in unit <Top>
+
+
+Optimizing unit <Top> ...
